@@ -12,7 +12,7 @@ const ProductMenu = ({ filterItem, productList }) => {
               <button style={{paddingLeft:'2.0rem'}}
                 key={curElem}
                 className="nav-link btn btn-link fw-bold"
-                onClick={() => filterItem(curElem)}
+                onClick={() => filterItem(curElem)} //filterItem is a function and curElem is the location arraow function is used to pass the location to the function
               >
                 {curElem}
               </button>

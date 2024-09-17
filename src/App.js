@@ -14,12 +14,12 @@ import Signup from './Components/Signup';
 const App = () => {
 
   
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState([]);//storing multiple items in array 
 
-  const handleAddToCart = (product) => {
+  const handleAddToCart = (product) => {   //append product with previous cart items
     setCartItems((prevCartItems) => [...prevCartItems, product]);
   };
-  return (
+  return (  
     <BrowserRouter>
       <Navbar />
       

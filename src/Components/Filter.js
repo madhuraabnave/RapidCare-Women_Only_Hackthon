@@ -1,6 +1,6 @@
 import React from "react";
 import './Filter.css'
-const Filter = ({ filterItem, userList }) => {
+const Filter = ({ filterItem, userList }) => {   //filteritem is a function and userlist is an array ex filteritem:pune,userlist:hospitals in pune
   return (
     <nav className="navbar navbar-expand-lg navbar-light mt-3 mb-4">
       <div className="container-fluid justify-content-center">

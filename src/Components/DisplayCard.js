@@ -7,7 +7,7 @@ const UserCard = ({ data }) => {
   return (
     <div className='container' style={{maxWidth:"1300px"}}>
       <div className="row row-cols-1 row-cols-md-3 g-4 mb-2 mx-3" style={{marginBottom: '15px'}}>
-        {data.map((curElm) => {
+        {data.map((curElm) => {   //curElem is a single hospital data,index
           const { id, location, speciality, image, description, hospital, beds, price } = curElm;
           return (
             <div className="col" key={id}>

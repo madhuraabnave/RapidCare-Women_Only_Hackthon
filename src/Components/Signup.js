@@ -1,11 +1,17 @@
 import React from 'react'
+//import { useNavigate } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Login.css';
 
 const Signup = () => {
+  //const navigate=useNavigate();
+  /*const handleClick=()=>{
+    navigate('/')
+  }*/
   return (
     <div className='container'>
-     <form>
+     <form >
      <div class="mb-3">
     <label for="name" class="form-label">Name</label>
     <input type="text" class="form-control" id="name" name="name" aria-describedby="namedivision"/>
@@ -25,7 +31,7 @@ const Signup = () => {
     <input type="password" class="form-control" name="password" id="cpassword"/>
   </div>
    <div className='button2'>
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button type="submit" class="btn btn-primary" ><Link to='/'>Sign in </Link></button>
   </div>
 </form>
 
